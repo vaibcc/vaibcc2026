@@ -11,7 +11,7 @@ export default function ProfileCard() {
       <div className="absolute -inset-px rounded-[28px] bg-gradient-to-br from-[#0078D4]/60 via-transparent to-[#0078D4]/20" />
       <div className="relative overflow-hidden rounded-[28px] bg-[#0b0b0b]">
         <div className="group relative aspect-[4/5] overflow-hidden">
-          <Image src="https://media.db.com/images/public/6aba16066f284f533f294cd1/7b0182119_666667.png" alt="Photo de profil de Vaibhav Kamra" className="h-full w-full object-cover transition-all duration-[1.5s] group-hover:scale-105 group-hover:saturate-150" />
+          <Image src="666667.png" alt="Photo de profil de Vaibhav Kamra" className="h-full w-full object-cover transition-all duration-[1.5s] group-hover:scale-105 group-hover:saturate-150" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0b] via-transparent to-transparent" />
           <div className="absolute left-4 top-4 font-mono text-[10px] text-zinc-400">ID://VK-001</div>
         </div>
