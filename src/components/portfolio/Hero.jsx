@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-28 pb-20">
       <div className="absolute inset-0">
-        <Image src="https://media.db.com/images/public/6aba16066f284f533f294cd1/b5e356092_generated_991b5b8e.jpg" alt="Baie de serveurs illuminée de LED bleues" className="h-full w-full opacity-25" />
+        <Image src="/666667.png" alt="Baie de serveurs illuminée de LED bleues" className="h-full w-full opacity-25" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/60 via-[#050505]/80 to-[#050505]" />
         <div className="grid-bg absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_75%)]" />
         <div className="absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-[#0078D4]/20 blur-[140px]" />
