@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PageNotFound from "./lib/PageNotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
-import Lab from "./components/portfolio/Lab";
+import Lab from "./components/portfolio/lab";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/lab" element={<Lab />} />
+          <Route path="/lab" element={<lab />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
