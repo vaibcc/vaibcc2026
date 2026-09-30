@@ -14,7 +14,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/lab" element={<lab />} />
+          <Route path="/lab" element={<Lab />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
