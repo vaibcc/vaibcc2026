@@ -21,7 +21,10 @@ export default function Navbar() {
     };
 
     onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+
+    window.addEventListener("scroll", onScroll, {
+      passive: true,
+    });
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -35,7 +38,10 @@ export default function Navbar() {
             : "max-w-6xl py-4 bg-transparent border-transparent"
         }`}
       >
-        <a href="#top" className="flex items-center gap-2.5"tems-center rounded-lg bg-[#0078D4] text-xs font-bold">
+        <a
+          href="#top"
+          className="flex items-center gap-2.5"
+  bg-[#0078D4] text-xs font-bold">
             VK
           </span>
           <span className="hidden font-mono text-xs tracking-wider text-zinc-400 sm:block">
@@ -50,16 +56,19 @@ export default function Navbar() {
                 <motion.span
                   layoutId="nav-focus"
                   className="absolute inset-0 rounded-lg border border-[#0078D4]/50 bg-[#0078D4]/10"
-                  transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 380,
+                    damping: 32,
+                  }}
                 />
               )}
 
               <a
                 href={`#${n.id}`}
                 className={`relative block px-3.5 py-1.5 text-sm transition-colors ${
-                  active === n.id
-                    ? "text5 py-1.5 text-sm text-zinc-400 hover:text-white transition-colors"
-    "
+                  active
+              className="block px-3.5 py-1.5 text-sm text-zinc-400 hover:text-white transitiontext-zinc-300"
           onClick={() => setOpen(!open)}
           aria-label="Menu"
         >
@@ -80,7 +89,8 @@ export default function Navbar() {
                 <a
                   href={`#${n.id}`}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-4 py-3 text-zinc-300 hover:bg-white/5 hover:text-             </a>
+                  className="block rounded-lg px-4 py-3 text-zinc-300 hover:bg-white/5 hover:text-white"
+      </a>
               </li>
             ))}
 
@@ -88,11 +98,9 @@ export default function Navbar() {
               <a
                 href="/labs"
                 onClick={() => setOpen(false)}
-                className="block rounded--white"
+                className="block rounded-lg px-4 py-3 text-zinc-300 hover:bg-white/5 hover:text-white"
               >
-                Labs
-              </a>
-            </li>
+ i>
           </motion.ul>
         )}
       </AnimatePresence>
