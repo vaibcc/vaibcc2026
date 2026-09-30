@@ -21,10 +21,7 @@ export default function Navbar() {
     };
 
     onScroll();
-
-    window.addEventListener("scroll", onScroll, {
-      passive: true,
-    });
+    window.addEventListener("scroll", onScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -40,8 +37,7 @@ export default function Navbar() {
       >
         <a
           href="#top"
-          className="flex items-center gap-2.5"
-  bg-[#0078D4] text-xs font-bold">
+          className="flex items-center rounded-lg bg-[#0078D4] text-xs font-bold">
             VK
           </span>
           <span className="hidden font-mono text-xs tracking-wider text-zinc-400 sm:block">
@@ -67,8 +63,9 @@ export default function Navbar() {
               <a
                 href={`#${n.id}`}
                 className={`relative block px-3.5 py-1.5 text-sm transition-colors ${
-                  active
-              className="block px-3.5 py-1.5 text-sm text-zinc-400 hover:text-white transitiontext-zinc-300"
+                  active === n.id
+              ="relative block px-3.5 py-1.5 text-sm text-zinc-400 hover:text-white"
+text-zinc-300"
           onClick={() => setOpen(!open)}
           aria-label="Menu"
         >
@@ -89,8 +86,8 @@ export default function Navbar() {
                 <a
                   href={`#${n.id}`}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-4 py-3 text-zinc-300 hover:bg-white/5 hover:text-white"
-      </a>
+                  className="block rounded-lg px-4 py-3 text-zinc-300 hover:bg       {n.label}
+                </a>
               </li>
             ))}
 
@@ -98,9 +95,10 @@ export default function Navbar() {
               <a
                 href="/labs"
                 onClick={() => setOpen(false)}
-                className="block rounded-lg px-4 py-3 text-zinc-300 hover:bg-white/5 hover:text-white"
-              >
- i>
+                className="block rounded-lg px-4 py-3          >
+                Labs
+              </a>
+            </li>
           </motion.ul>
         )}
       </AnimatePresence>
